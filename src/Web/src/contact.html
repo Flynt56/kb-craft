@@ -22,7 +22,6 @@
 
       <ul class="nav-list">
         <li class="nav-list-item"><a href="index.html">Home</a></li>
-        <li class="nav-list-item"><a href="showcase.html">Showcase</a></li>
         <li class="nav-list-item cta"><a href="index.html">Craft</a></li>
         <li class="nav-list-item"><a href="about-us.html">About Us</a></li>
         <li class="nav-list-item"><a href="contact.html">Contact</a></li>
@@ -30,90 +29,63 @@
 
       <span></span>
     </nav>
+    <hr class="ridge separator" />
   </header>
   <main class="main">
-    <div class="content">
+    <div class="content container contact">
+      <article>
+        <h1>Contact</h1>
+        <h2>Get in touch!</h2>
+        <form action="sent_contact_form.php" id="contact_form" name="contact_form" method="POST">
 
-      <div class="heading">
-        <div class="heading-content blur">
-          <h1 class="heading-title">Bespoke Keyboards</h1>
-          <h2 class="heading-subtitle">For<span class="header-changer"> Everyone</span></h2>
-        </div>
+          <label>Given Name
+            <input class="card-list-item" type="text" name="givenName" placeholder="Your given name&hellip;" required>
+          </label>
 
-        <video class="heading-vid" autoplay muted loop>
-          <source src="assets/vid/01.webm" type="video/webm">
-          Your browser does not support the video tag.
-        </video>
+          <label>Family Name
+            <input class="card-list-item" type="text" name="familyName" placeholder="Your family name&hellip;" required>
+          </label>
 
-      </div>
+          <label>Your E-mail
+            <input class="card-list-item" type="email" name="email" placeholder="Your e-mail&hellip;" required>
+          </label>
 
+          <label>Country
+            <select class="card-list-item" name="country">
+              <option value="">Please select</option>
+              <option value="HR" selected>Croatia</option>
+              <option value="DE">Germany</option>
+              <option value="FR">France</option>
+              <option value="UK">United Kingdom</option>
+            </select>
+          </label>
+
+          <label>Subject
+            <textarea class="card-list-item" name="subject" placeholder="Write something&hellip;"
+              style="height:200px"></textarea>
+          </label>
+
+          <input type="submit" value="Submit">
+        </form>
+      </article>
       <hr class="ridge separator" />
-
-      <div class="card-list container">
-
-        <article class="card-list-item">
-          <h3 class="title blur">Your dream keyboard</h3>
-          <figure>
-            <img class="prop-scale" src="assets/img/03.webp" />
-            <figcaption class="blur">60&percnt; mechanical keyboard with aluminium base</figcaption>
-          </figure>
-          <div class="card-content-description">
-            <p>Our tooling and expertise unlocks a vast array of options. Be it aluminium cases, LED rim lighting
-              or
-              even buckling springs.<br />We've got you covered!</p>
-          </div>
-        </article>
-
-        <article class="card-list-item card-content">
-          <h3 class="title blur">Craftsmanship</h3>
-          <figure>
-            <img class="prop-scale" src="assets/img/02.webp" />
-            <figcaption class="blur">Custom cyan keycaps with wooden base</figcaption>
-          </figure>
-          <div class="card-content-description">
-            <p>We treat every keyboard we make as if it's our own. All keyboards are made according to
-              <strong>your</strong> specifications.<br />Satisfaction is guaranteed!</p>
-          </div>
-        </article>
-
-        <article class="card-list-item card-content">
-          <h3 class="title blur">We made it possible</h3>
-          <figure>
-            <img class="prop-scale" src="assets/img/01.webp" />
-            <figcaption class="blur">Symbolics Space Cadet inspired keyboard</figcaption>
-          </figure>
-          <div class="card-content-description">
-            <p>Don't believe us?<br />Find out how we create works of art.</p>
-          </div>
-        </article>
-
-        <article class="card-list-item card-content">
-          <h3 class="title blur">Get in touch</h3>
-          <figure>
-            <img class="prop-scale" src="assets/img/04.webp" />
-            <figcaption class="blur">60&percnt; mechanical keyboard with SA keycaps</figcaption>
-          </figure>
-          <div class="card-content-description">
-            <p>Feel free to ask us a question or make a very special request.<br />Don't be shy!</p>
-          </div>
-        </article>
-
-      </div>
+      <article>
+        <h2>Where to find us&hellip;</h2>
+        <iframe class="g-map prop-scale"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2275.8860712142496!2d16.072253173186052!3d45.714931175131994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47667e543ebb2c65%3A0xe159703d90972cf3!2sUniversity%20of%20Applied%20Sciences%20Velika%20Gorica!5e0!3m2!1sen!2shr!4v1578426916562!5m2!1sen!2shr"
+          frameborder="0" allowfullscreen=""></iframe>
+      </article>
     </div>
-    <footer class="footer">
-      <div class="footer-container">
-
-        <ul>
-          <li class="footer-ref-item">
-            <a title="GitHub source code repository" href="#" target="_blank"><img src="assets/img/github-brands.svg"
-                title="GitHub" alt="GH" /></a>
-          </li>
-        </ul>
-
-        <span class="copyright-statement">&copy; <time datetime="2020-01-01">2020</time> Ivan Benko</span>
-      </div>
-    </footer>
   </main>
+  <footer class="footer">
+    <ul>
+      <li class="footer-ref-item">
+        <a title="GitHub source code repository" href="#" target="_blank"><img src="assets/img/github-brands.svg"
+            title="GitHub" alt="GH" /></a>
+      </li>
+    </ul>
+    <span class="copyright-statement">&copy; <time datetime="2020-01-01">2020</time> Ivan Benko</span>
+  </footer>
 </body>
 
 </html>
